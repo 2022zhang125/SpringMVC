@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!--
+  注意：这里的HTML不是HTML而是 Thymeleaf模版字符串，因为在视图解析器中配置的后缀是 html 所以他只能识别成Thymeleaf以html结尾的模版字符串。
+      所以说，这里不是HTML，而是Thymeleaf。
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>首页</h1>
+<a th:href="@{/first}">First Spring MVC</a>
+</body>
+</html>
