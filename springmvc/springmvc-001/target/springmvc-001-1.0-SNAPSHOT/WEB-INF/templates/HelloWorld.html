@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Hello Spring MVC</title>
 </head>
 <body>
     <h1>Hello SpringMVC!!!</h1>
+    <!--
+        使用Thymeleaf模版语句。
+        动态获取项目名。
+    -->
+    <a th:href="@{/world}">To World!!!</a>
 </body>
 </html>

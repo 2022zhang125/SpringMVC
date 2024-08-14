@@ -25,11 +25,16 @@
             <!--不参与war包的打包，因为Tomcat中有。provided表示该依赖由第三方容器提供。-->
             <scope>provided</scope>
         </dependency>
-        <!--LogBack-->
+        <!--Log4j2-->
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.4.14</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.19.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
+            <version>2.19.0</version>
         </dependency>
         <!--Spring6和thymeleaf整合的依赖-->
         <dependency>
