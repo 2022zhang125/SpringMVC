@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>首页</h1>
+<hr/>
+<br>
+<a th:href="@{/user/detail}">用户详情</a><br/>
+<a th:href="@{/product/detail}">产品详情</a><br/>
+<a th:href="@{/params?username=admin&password=321}">测试Params属性</a><br>
+<!--使用Thymeleaf的携带参数-->
+<a th:href="@{/params(username='admin',password='1233')}">测试Params2属性</a><br>
+</body>
+</html>
