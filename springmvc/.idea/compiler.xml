@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springmvc-002" />
         <module name="springmvc-001" />
+        <module name="springmvc-003-requestmapping-anno" />
       </profile>
     </annotationProcessing>
   </component>
