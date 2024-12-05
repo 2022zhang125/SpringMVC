@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/springmvc-001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvc-001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvc-002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvc-002/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-003-requestmapping-anno/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-003-requestmapping-anno/src/main/java/cn/believesun/springmvc/controller/TestController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-003-requestmapping-anno/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-004-requestparam/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-004-requestparam/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

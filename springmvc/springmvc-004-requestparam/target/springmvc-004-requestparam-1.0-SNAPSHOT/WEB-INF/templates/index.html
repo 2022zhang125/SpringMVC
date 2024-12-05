@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<a th:href="@{/user/register}">注册</a>
+</body>
+<br>
+<script type="text/javascript">
+    function sendCookie(){
+        document.cookie = "id=123456789; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
+        document.location = "/springmvc/user/register";
+    }
+</script>
+<button onclick="sendCookie()">向服务器端发送Cookie</button>
+</html>
