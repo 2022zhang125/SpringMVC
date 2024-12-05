@@ -88,3 +88,38 @@
 
 # GET请求在Tomcat8及其之前使用的是URIEncoding = ISO-8859-1，之后的版本默认使用UTF-8
     解决方法：在CATALINA_HOMT/conf/server.xml文件中在Connector后加入URIEncoding = "UTF-8"即可
+
+# POST请求乱码问题
+    解决方法：在接收变量之前使用request.setCharacterEncoding("UTF-8");去定义其编码格式，注意：必须要在request.getRequestParamter("")之前
+    但是，在Tomcat10之前版本需要注意这个，之后则不需要设置。
+
+// # 使用Filter过滤器去设置字符集，让所有的请求在请求资源的时候 自动设置编码集和请求集
+
+# 使用SpringMVC自带的过滤器：CharacterEncodingFilter
+```xml
+    <!--使用SpringMVC自带的编码过滤器来定义请求和响应的字符编码方式-->
+    <filter>
+        <filter-name>characterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <!--设置编码方式-->
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <!--设置请求必须要使用我们的UTF-8-->
+            <param-name>forceRequestEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <!--设置响应必须要使用我们的UTF-8-->
+            <param-name>forceResponseEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>characterEncodingFilter</filter-name>
+        <!--对所有的请求都过滤-->
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+```
