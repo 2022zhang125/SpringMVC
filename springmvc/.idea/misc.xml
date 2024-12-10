@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/springmvc-003-requestmapping-anno/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc-004-requestparam/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc-005/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-006-view/pom.xml" />
       </list>
     </option>
   </component>
