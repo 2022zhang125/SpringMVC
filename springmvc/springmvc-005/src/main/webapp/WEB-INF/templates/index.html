@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h1>三种域对象</h1>
+<hr/>
+<h2>请求域</h2>
+<a th:href="@{/requestServletAPI}">使用Servlet原生API实现请求域共享数据</a><br>
+<a th:href="@{/requestScopeMap}">使用Map接口实现请求域共享数据</a><br>
+<a th:href="@{/requestScopeModel}">使用Model接口实现请求域共享数据</a><br>
+<a th:href="@{/requestScopeModelMap}">使用ModelMap接口实现请求域共享数据</a><br>
+<a th:href="@{/requestModelAndView}">使用ModelAndView类实现请求域共享数据</a><br>
+<h2>会话域</h2>
+<a th:href="@{/sessionServletAPI}">使用Servlet原生API实现会话域共享数据</a><br>
+<a th:href="@{/sessionModelMap}">使用ModelMap接口实现会话域共享数据</a><br>
+<h2>应用域</h2>
+<a th:href="@{/applicationServletAPI}">使用Servlet原生API实现应用域共享数据</a><br>
+</body>
+</html>
